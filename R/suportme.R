@@ -13,20 +13,38 @@
 supportme <- function(type = c("love",
                                 "encouragement",
                                 "humor")){
+  if(!(type %in% c("love",
+                     "encouragement",
+                     "humor"))) {
+    stop(type, " does not equal any of 'love', 'encouragement' or 'humor'")
+  }
   if(type == "love") {
-    print(sample(c("You are loved!",
+    cat(sample(c("You are loved!",
              "I love you!",
-             "We love you!"), 1))
+             "We love you!",
+             "I love your gentle soul",
+             "I love your compassionate nature",
+             "I love your singing"), 1))
   }
   if(type == "encouragement") {
-    print(sample(c("You got this!",
+    cat(sample(c("You got this!",
              "You are smart!",
-             "You can do this!"), 1))
+             "You can do this!",
+             "R doesn't stand a chance",
+             "That error message probably doesn't matter anyway. Just ignore it",
+             "Keep going, you've almost got it"), 1))
   }
   if(type == "humor") {
-    print(sample(c(paste0("Whats red and white and red and white... ",
-             " Santa Clause falling down a chimney")), 1))
+    cat(sample(c(paste0("What is red and white and falls down the chimney?
+                        Santa klutz."),
+             "There was a king once who was 12 inches tall. Terrible king, great ruler.",
+             "My grandpa always said when one door closes, another one opens.
+             Smart man but a horrible cabinet maker.",
+             "People are usually shocked when they find out I'm not a
+             very good electrician.",
+             "Of all the inventions of the last hundred years,
+             the dry erase board is the most remarkable."
+             ), 1))
   }
 }
-
 
