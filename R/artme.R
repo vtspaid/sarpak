@@ -3,7 +3,7 @@
 #'
 #' There are no arguments to this function. Simply time artme() and enjoy!
 #'
-#' @example artme()
+#' @examples artme()
 
 artme <- function(){
 

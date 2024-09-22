@@ -9,3 +9,6 @@ artme()
 \description{
 There are no arguments to this function. Simply time artme() and enjoy!
 }
+\examples{
+artme()
+}
